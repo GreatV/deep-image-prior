@@ -107,7 +107,7 @@ def get_image(path, imsize=-1):
         if imsize[0] > img.size[0]:
             img = img.resize(imsize, Image.BICUBIC)
         else:
-            img = img.resize(imsize, Image.ANTIALIAS)
+            img = img.resize(imsize, Image.LANCZOS)
 
     img_np = pil_to_np(img)
 

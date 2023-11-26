@@ -2,11 +2,8 @@ import os
 import torch
 import torch.nn as nn
 import torchvision.transforms as transforms
-import torchvision.models as models
 from .matcher import Matcher
-from collections import OrderedDict
 
-from torchvision.models.vgg import model_urls
 from torchvision.models import vgg19
 from torch.autograd import Variable
 
